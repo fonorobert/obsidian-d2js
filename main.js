@@ -39,10 +39,17 @@ module.exports = class D2Plugin extends Plugin {
 
             const svgEl = wrap.querySelector('svg');
             if (svgEl) {
-              svgEl.setAttribute('width', '100%');
-              svgEl.style.height = 'auto';
-              svgEl.style.maxWidth = '100%';
+              // Container scroll
+              wrap.style.width = '100%';
+              wrap.style.overflowX = 'auto';
+              wrap.style.overflowY = 'hidden';
+              wrap.style.webkitOverflowScrolling = 'touch';
+            
+              // SVG sizing
               svgEl.style.display = 'block';
+              svgEl.style.height = 'auto';
+              svgEl.style.maxWidth = '100%';   // don’t overflow pane
+              svgEl.style.minWidth = '700px';  // optional: give it some baseline width
             }
           } catch (e) {
             host.setText('D2 render error: ' + (e?.message ?? String(e)));
