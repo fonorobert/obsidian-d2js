@@ -1,7 +1,7 @@
 {
   "id": "obsidian-d2js",
   "name": "D2 JS",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "minAppVersion": "1.4.0",
   "description": "Render ```d2 code fences as SVG in Live Preview and Reading view (per-diagram config only).",
   "author": "frs",
