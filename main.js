@@ -8,7 +8,7 @@
 const { Plugin, MarkdownRenderChild, normalizePath, Notice } = require('obsidian');
 
 // ⬇️ EDIT THIS: folder in your repo that holds d2.global.js + d2.wasm (raw URL base)
-const RAW_BASE = 'https://raw.githubusercontent.com/<USER>/<REPO>/<BRANCH>/obsidian-d2-assets';
+const RAW_BASE = 'https://raw.githubusercontent.com/fonorobert/obsidian-d2js/main';
 
 // If you also gzipped your global bundle, ignore that here; this version pulls the plain files.
 const ASSETS = [
