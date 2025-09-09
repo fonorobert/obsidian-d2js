@@ -13,7 +13,6 @@ const RAW_BASE = 'https://raw.githubusercontent.com/fonorobert/obsidian-d2js/mai
 // If you also gzipped your global bundle, ignore that here; this version pulls the plain files.
 const ASSETS = [
   { name: 'd2.global.js', type: 'text'   },  // text script
-  { name: 'd2.wasm',      type: 'binary' }   // binary WASM
 ];
 
 // (Optional) You can pin checksums to harden integrity.
